@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scrbbl AI</title>
+<meta name="description" content="Scrbbl AI for iPad: write anything with Apple Pencil, underline it three times, and the answer appears in handwriting.">
+<style>
+  /* The same handwriting font the app uses, served with the page (SIL OFL, fonts/OFL.txt). */
+  @font-face {
+    font-family: "Scrbbl Hand";
+    src: url("fonts/NothingYouCouldDo.ttf") format("truetype");
+    font-display: block;
+  }
+  :root {
+    --page: #ffffff;
+    --ink: #000000;
+    --muted: #6e6e73;
+    --rule: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #000000;
+      --ink: #ffffff;
+      --muted: #98989d;
+      --rule: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  .hand { font-family: "Scrbbl Hand", -apple-system, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 32px 0 0; }
+  .logo { font-size: 28px; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+  h1 { font-size: clamp(34px, 6vw, 48px); line-height: 1.1; letter-spacing: -0.02em; font-weight: 700; margin: 72px 0 16px; }
+  .lede { font-size: 20px; color: var(--muted); margin: 0 0 8px; }
+  .soon { color: var(--muted); margin: 0; }
+  .example { margin: 64px 0; padding: 40px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .example .q { font-size: 32px; line-height: 1.2; margin: 0; }
+  .example svg { width: 100%; max-width: 460px; height: auto; display: block; margin: 4px 0 20px; }
+  .example svg path { fill: none; stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; }
+  .example .a { font-size: 24px; line-height: 1.5; margin: 0; }
+  h2 { font-size: 22px; font-weight: 600; margin: 0 0 20px; }
+  ol { margin: 0; padding: 0; list-style: none; }
+  li { padding: 16px 0; border-top: 1px solid var(--rule); }
+  li:last-child { border-bottom: 1px solid var(--rule); }
+  li strong { font-weight: 600; }
+  li span { color: var(--muted); }
+  footer { color: var(--muted); font-size: 14px; padding: 64px 0 40px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="logo" href="/">Scrbbl AI</a>
+  </header>
+
+  <h1>Write a question.<br>Get an answer in ink.</h1>
+  <p class="lede">Write anything with Apple Pencil, underline it three times, and the answer appears right on the page in handwriting.</p>
+  <p class="soon">Coming soon to iPad.</p>
+
+  <section class="example" aria-label="Example: a handwritten question, underlined three times, with a handwritten answer below">
+    <p class="q hand">What causes the northern lights?</p>
+    <svg viewBox="0 0 460 44" aria-hidden="true">
+      <path d="M6 9 C 120 5, 270 11, 440 6"/>
+      <path d="M12 23 C 150 19, 280 26, 420 20"/>
+      <path d="M8 37 C 130 34, 260 39, 430 33"/>
+    </svg>
+    <p class="a hand">Charged particles from the sun are funneled toward the poles by Earth's magnetic field, where they collide with oxygen and nitrogen high in the atmosphere and glow.</p>
+  </section>
+
+  <h2>How it works</h2>
+  <ol>
+    <li><strong>Write it down.</strong> <span>Any question or text, anywhere on the page.</span></li>
+    <li><strong>Underline it three times</strong> <span>for a short answer. Messy lines are fine.</span></li>
+    <li><strong>Or circle it</strong> <span>for a fuller answer with examples.</span></li>
+  </ol>
+
+  <footer>© 2026 Scrbbl AI</footer>
+</main>
+</body>
+</html>
