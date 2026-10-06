@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Scrbbl AI</title>
+<meta name="description" content="How Scrbbl AI handles your handwriting and your API key.">
+<link rel="icon" type="image/png" href="/favicon.png">
+<style>
+  :root { --page: #ffffff; --ink: #000000; --muted: #6e6e73; --rule: #e5e5ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --page: #000000; --ink: #ffffff; --muted: #98989d; --rule: #2c2c2e; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 32px 0 0; }
+  .logo { font-size: 28px; font-weight: 700; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+  h1 { font-size: 36px; line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; margin: 56px 0 8px; }
+  .updated { color: var(--muted); margin: 0 0 40px; }
+  h2 { font-size: 20px; font-weight: 600; margin: 36px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 22px; margin: 0 0 12px; }
+  a { color: inherit; }
+  footer { color: var(--muted); font-size: 14px; padding: 64px 0 40px; border-top: 1px solid var(--rule); margin-top: 56px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="logo" href="/">Scrbbl AI</a>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated October 5, 2026</p>
+
+  <p>Scrbbl AI is an open-source iPad app. It has no accounts, no analytics, no ads, and no servers of its own. This page explains the little data it does handle.</p>
+
+  <h2>Your handwriting</h2>
+  <p>When you underline something three times or circle it, the app takes a picture of just that handwriting and sends it to OpenAI to get an answer. Nothing is sent until you make one of those gestures, and the rest of your page stays on your iPad.</p>
+  <p>OpenAI processes the request under its own terms and privacy policy, using the API key you provide. For some questions OpenAI may search the web to answer. See <a href="https://openai.com/policies/privacy-policy">OpenAI's privacy policy</a> and its API data-use policies for how it handles requests.</p>
+
+  <h2>Your API key</h2>
+  <p>You enter your own OpenAI API key. It is stored in your iPad's Keychain, only on that device, and is sent only to OpenAI to authorize your requests. We never see it.</p>
+
+  <h2>What stays on your iPad</h2>
+  <ul>
+    <li>Your writing on the page.</li>
+    <li>Your settings, such as the Fast or Smart answer mode.</li>
+  </ul>
+  <p>We don't collect, store, sell, or share any of it, because none of it is sent to us.</p>
+
+  <h2>Children</h2>
+  <p>Scrbbl AI is not directed at children under 13, and we don't knowingly collect information from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we'll update this page and the date above. The app's source code is public, so you can always check exactly what it does.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or concerns? Open an issue on <a href="https://github.com/AdamProbolsky/scrbbl/issues">GitHub</a>.</p>
+
+  <footer>An open source project by <a href="https://www.linkedin.com/in/adamprobolsky">Adam Probolsky</a> · <a href="/">scrbbl.ai</a></footer>
+</main>
+</body>
+</html>
