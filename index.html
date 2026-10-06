@@ -53,10 +53,7 @@
   .lede { font-size: 20px; color: var(--muted); margin: 0 0 8px; }
   .soon { color: var(--muted); margin: 0; }
   .example { margin: 64px 0; padding: 40px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
-  .example .q { font-size: 32px; line-height: 1.2; margin: 0; }
-  .example svg { width: 100%; max-width: 460px; height: auto; display: block; margin: 4px 0 20px; }
-  .example svg path { fill: none; stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round; }
-  .example .a { font-size: 24px; line-height: 1.5; margin: 0; }
+  .example video { display: block; width: 100%; max-width: 380px; height: auto; margin: 0 auto; border-radius: 18px; background: var(--rule); }
   h2 { font-size: 22px; font-weight: 600; margin: 0 0 20px; }
   ol { margin: 0; padding: 0; list-style: none; }
   li { padding: 16px 0; border-top: 1px solid var(--rule); }
@@ -77,14 +74,10 @@
   <p class="lede">Write anything on your iPad with an Apple Pencil, underline it three times, and the answer appears handwritten below.</p>
   <p class="soon"><a href="https://github.com/AdamProbolsky/scrbbl">Download the repo today.</a></p>
 
-  <section class="example" aria-label="Example: a handwritten question, underlined three times, with a handwritten answer below">
-    <p class="q hand">What causes the northern lights?</p>
-    <svg viewBox="0 0 460 44" aria-hidden="true">
-      <path d="M6 9 C 120 5, 270 11, 440 6"/>
-      <path d="M12 23 C 150 19, 280 26, 420 20"/>
-      <path d="M8 37 C 130 34, 260 39, 430 33"/>
-    </svg>
-    <p class="a hand">Charged particles from the sun are funneled toward the poles by Earth's magnetic field, where they collide with oxygen and nitrogen high in the atmosphere and glow.</p>
+  <section class="example">
+    <video src="demo.mp4" poster="demo-poster.jpg" autoplay muted loop playsinline preload="auto"
+           width="540" height="864"
+           aria-label="Writing a question with Apple Pencil, underlining it three times, and the answer appearing in handwriting"></video>
   </section>
 
   <h2>How it works</h2>
